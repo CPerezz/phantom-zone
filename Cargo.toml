@@ -18,6 +18,7 @@ num-bigint-dig = { version = "0.8.4", features = ["prime"] }
 
 [dev-dependencies]
 criterion = "0.5.1"
+image = "0.24"
 
 [features]
 interactive_mp = []
@@ -58,4 +59,14 @@ required-features = ["non_interactive_mp"]
 [[example]]
 name = "if_and_else"
 path = "./examples/if_and_else.rs"
+required-features = ["non_interactive_mp"]
+
+[[example]]
+name = "image_processing"
+path = "./examples/image_processing.rs"
+required-features = ["non_interactive_mp"]
+
+[[example]]
+name = "frog_arena"
+path = "./examples/frog_arena.rs"
 required-features = ["non_interactive_mp"]
